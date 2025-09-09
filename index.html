@@ -3,9 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <title>My Personal Site</title>
+ <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/caf0e78192.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Top bar to separate the picture from the top of the browser -->
+  <div class="top-bar">
+    <!-- Hamburger menu icon inside the top bar -->
+    <button id="menu-btn" aria-label="Open menu">
+      <img src="icons/bars-solid-full.svg" alt="Menu" height="32" />
+    </button>
+    <!-- Menu links, hidden by default -->
+    <div id="menu-links" class="menu-links">
+      <a href="#">Home</a>
+      <a href="#bio">About</a>
+      <a href="#portfolio">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- Noir Horror Hero Section - full screen -->
+  <header class="hero-noir-full">
+    <!-- The TV image is set as a background in CSS -->
+    <div class="hero-overlay">
+      <!-- Intro text over the image -->
+      <h1>Hello My Name is Esdras a Crafting Developer</h1>
+     
+    </div>
+  </header>
+
+  <!-- Bio Section -->
+  <section id="bio">
+    <h2>About Me</h2>
+    <p>Hello! I'm learning web development and this is my personal site. I love coding and the 1980's Matrix style!</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript (soon!)</li>
+    </ul>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Portfolio Projects</h2>
+    <p>Coming soon!</p>
+  </section>
+
+  <!-- Simple script to show/hide the menu -->
+  <script>
+    // Get the menu button and menu links
+    const menuBtn = document.getElementById('menu-btn');
+    const menuLinks = document.getElementById('menu-links');
+    // When the button is clicked, toggle the menu
+    menuBtn.onclick = function() {
+      menuLinks.classList.toggle('show');
+    };
+  </script>
 </body>
 </html>
