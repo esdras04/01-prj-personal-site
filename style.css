@@ -226,7 +226,7 @@ header.hero-noir::after {
   width: 100%;
   height: 100vh;
   min-height: 400px;
-  background: #111 url('img/scaryPic.png') no-repeat center center;
+  background: #111 url('./img/scaryPic.png') no-repeat center center;
   background-size: cover; /* Make the image cover the whole hero section */
   position: relative;
   display: block;
