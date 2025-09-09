@@ -38,25 +38,133 @@
   <!-- Bio Section -->
   <section id="bio">
     <h2>About Me</h2>
-    <p>Hello! I'm learning web development and this is my personal site. I love coding and the 1980's Matrix style!</p>
+    <div class="about-content">
+      <!-- Profile picture on the left -->
+      <img src="img/profilePic.jpg" alt="Profile Picture" class="profile-pic">
+      <!-- About text on the right, formatted for readability -->
+      <div class="about-text">
+        <p>👋 Hi, I'm Esdras<br>
+        👀 I'm interested in web development<br>
+        🌱 I'm currently learning AWS and FIGMA<br>
+        💞️ I'm looking to collaborate on personal projects and get internship experience<br>
+        I'm a Junior CS Major at Adelphi University in New York<br>
+        I'm a Mexican/Nicaraguan American first generation student</p>
+        I love horror/noir aesthetics and video games 
+      </div>
+    </div>
   </section>
 
   <!-- Skills Section -->
   <section id="skills">
     <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript (soon!)</li>
-    </ul>
+    <!-- Skills displayed in a row with icons -->
+    <div class="skills-row">
+      <!-- HTML -->
+      <span class="skill-item"><img src="icons/html5-brands-solid-full.svg" alt="HTML" class="skill-icon"> HTML</span>
+      <!-- CSS -->
+      <span class="skill-item"><img src="icons/css3-alt-brands-solid-full.svg" alt="CSS" class="skill-icon"> CSS</span>
+      <!-- JavaScript -->
+      <span class="skill-item"><img src="icons/square-js-brands-solid-full.svg" alt="JavaScript" class="skill-icon"> JavaScript</span>
+      <!-- Java -->
+      <span class="skill-item"><img src="icons/java-brands-solid-full.svg" alt="Java" class="skill-icon"> Java</span>
+      <!-- Python -->
+      <span class="skill-item"><img src="icons/python-brands-solid-full.svg" alt="Python" class="skill-icon"> Python</span>
+      <!-- GitHub -->
+      <span class="skill-item"><img src="icons/github-brands-solid-full.svg" alt="GitHub" class="skill-icon"> GitHub</span>
+      <!-- AWS -->
+      <span class="skill-item"><img src="icons/aws-brands-solid-full.svg" alt="AWS" class="skill-icon"> AWS</span>
+    </div>
   </section>
 
   <!-- Portfolio Section -->
   <section id="portfolio">
     <h2>Portfolio Projects</h2>
-    <p>Coming soon!</p>
+    <div class="projects-grid">
+      
+      <!-- 3D Models Website -->
+      <div class="project-card">
+        <h3>3D Models Gallery</h3>
+        <p>An interactive website showcasing 3D models with Three.js integration. Features rotating displays, zoom functionality, and detailed model information with a dark, immersive interface.</p>
+        <div class="project-tech">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Three.js</span>
+          <span class="tech-tag">WebGL</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">Live Demo</a>
+          <a href="#" class="project-link">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Street Food Vendor App -->
+      <div class="project-card">
+        <h3>Street Food Vendor</h3>
+        <p>A mobile-responsive web application for street food vendors to manage their menu, take orders, and track sales. Features geolocation services and real-time order updates.</p>
+        <div class="project-tech">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">MongoDB</span>
+          <span class="tech-tag">Express</span>
+          <span class="tech-tag">GPS API</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">Live Demo</a>
+          <a href="#" class="project-link">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Skateboard Customization Interface -->
+      <div class="project-card">
+        <h3>Skateboard Designer</h3>
+        <p>An interactive skateboard customization interface allowing users to design their own boards with different decks, wheels, and graphics. Includes 360° preview and save functionality.</p>
+        <div class="project-tech">
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Canvas API</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">Local Storage</span>
+          <span class="tech-tag">SVG</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">Live Demo</a>
+          <a href="#" class="project-link">GitHub</a>
+        </div>
+      </div>
+
+    </div>
   </section>
 
+ 
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>Esdras Mora Navarro</h3>
+        <p>Junior CS Major | Full Stack Developer</p>
+        <p>Adelphi University, New York</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:esdrasmora@mail.adelphi.edu">
+          <i class="fas fa-envelope"></i>
+          esdrasmora@mail.adelphi.edu
+        </a>
+        <a href="https://github.com/esdras04" target="_blank">
+          <i class="fab fa-github"></i>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/esdras-mora-navarro-97964b29a/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Esdras Mora Navarro. All rights reserved.</p>
+      <p class="matrix-effect">01100101 01110011 01100100 01110010 01100001 01110011</p>
+    </div>
+  </footer>
   <!-- Simple script to show/hide the menu -->
   <script>
     // Get the menu button and menu links
