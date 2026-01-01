@@ -2,86 +2,159 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
- <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+  <title>Esdras Mora Portfolio Webpage</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/caf0e78192.js" crossorigin="anonymous"></script>
+  <link rel= "stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="icons\ghost-solid-full.svg">
 </head>
 <body>
-  <!-- Top bar to separate the picture from the top of the browser -->
+
   <div class="top-bar">
-    <!-- Hamburger menu icon inside the top bar -->
+    <a href="#" class="home-icon" aria-label="Home">
+      <i class="fas fa-home"></i>
+    </a>
     <button id="menu-btn" aria-label="Open menu">
       <img src="icons/bars-solid-full.svg" alt="Menu" height="32" />
     </button>
-    <!-- Menu links, hidden by default -->
     <div id="menu-links" class="menu-links">
-      <a href="#">Home</a>
       <a href="#bio">About</a>
       <a href="#portfolio">Projects</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
 
-  <!-- Noir Horror Hero Section - full screen -->
   <header class="hero-noir-full">
-    <!-- The TV image is set as a background in CSS -->
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="img/staticTv.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
     <div class="hero-overlay">
-      <!-- Intro text over the image -->
-      <h1>Hello My Name is Esdras a Crafting Developer</h1>
-     
+      <h1>Hello My Name is Esdras a <span class="animated-word"><span class="word">Crafting</span><span class="word">Passionate</span><span class="word">Creative</span></span> Developer</h1>
     </div>
   </header>
 
-  <!-- Bio Section -->
   <section id="bio">
     <h2>About Me</h2>
     <div class="about-content">
-      <!-- Profile picture on the left -->
       <img src="img/profilePic.jpg" alt="Profile Picture" class="profile-pic">
-      <!-- About text on the right, formatted for readability -->
       <div class="about-text">
-        <p>👋 Hi, I'm Esdras<br>
-        👀 I'm interested in web development<br>
-        🌱 I'm currently learning AWS and FIGMA<br>
-        💞️ I'm looking to collaborate on personal projects and get internship experience<br>
-        I'm a Junior CS Major at Adelphi University in New York<br>
-        I'm a Mexican/Nicaraguan American first generation student</p>
-        I love horror/noir aesthetics and video games 
+       <p class="bio noir">
+  My name is <strong>Esdras Mora Navarro</strong>, a junior Computer Science major at Adelphi University with a passion for web development and creative problem-solving.<br><br>
+
+  As a first-generation Mexican/Nicaraguan American, my journey in tech is fueled by perseverance, curiosity, and the desire to create meaningful digital experiences.<br><br>
+
+  I’m currently learning <span class="highlight">AWS</span> and <span class="highlight">Figma</span>, and I’m seeking internships and collaborative projects that help me grow both technically and creatively.<br><br>
+
+  I draw inspiration from <em>horror and noir aesthetics</em>, storytelling, and video games. Worlds where atmosphere and detail matter just as much as function.
+</p>
+
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
   <section id="skills">
     <h2>Skills</h2>
-    <!-- Skills displayed in a row with icons -->
     <div class="skills-row">
-      <!-- HTML -->
       <span class="skill-item"><img src="icons/html5-brands-solid-full.svg" alt="HTML" class="skill-icon"> HTML</span>
-      <!-- CSS -->
       <span class="skill-item"><img src="icons/css3-alt-brands-solid-full.svg" alt="CSS" class="skill-icon"> CSS</span>
-      <!-- JavaScript -->
       <span class="skill-item"><img src="icons/square-js-brands-solid-full.svg" alt="JavaScript" class="skill-icon"> JavaScript</span>
-      <!-- Java -->
       <span class="skill-item"><img src="icons/java-brands-solid-full.svg" alt="Java" class="skill-icon"> Java</span>
-      <!-- Python -->
       <span class="skill-item"><img src="icons/python-brands-solid-full.svg" alt="Python" class="skill-icon"> Python</span>
-      <!-- GitHub -->
       <span class="skill-item"><img src="icons/github-brands-solid-full.svg" alt="GitHub" class="skill-icon"> GitHub</span>
-      <!-- AWS -->
       <span class="skill-item"><img src="icons/aws-brands-solid-full.svg" alt="AWS" class="skill-icon"> AWS</span>
+      <span class="skill-item"><i class="fas fa-database" style="width: 28px; height: 28px; margin-right: 8px; vertical-align: middle; filter: drop-shadow(0 0 4px #a00);"></i> MySQL</span>
+      <span class="skill-item"><i class="fas fa-database" style="width: 28px; height: 28px; margin-right: 8px; vertical-align: middle; filter: drop-shadow(0 0 4px #a00);"></i> PostgreSQL</span>
+      <span class="skill-item"><i class="fas fa-users" style="width: 28px; height: 28px; margin-right: 8px; vertical-align: middle; filter: drop-shadow(0 0 4px #a00);"></i> Agile</span>
+      <span class="skill-item"><i class="fas fa-brain" style="width: 28px; height: 28px; margin-right: 8px; vertical-align: middle; filter: drop-shadow(0 0 4px #a00);"></i> AI/ChatGPT</span>
     </div>
   </section>
 
-  <!-- Portfolio Section -->
+  <section id="soft-skills">
+    <h2>Soft Skills</h2>
+    <div class="skills-row">
+      <span class="skill-item"><i class="fas fa-comments" style="width: 28px; height: 28px; margin-right: 8px; vertical-align: middle; filter: drop-shadow(0 0 4px #a00);"></i> Communication</span>
+      <span class="skill-item"><i class="fas fa-lightbulb" style="width: 28px; height: 28px; margin-right: 8px; vertical-align: middle; filter: drop-shadow(0 0 4px #a00);"></i> Problem Solving</span>
+      <span class="skill-item"><i class="fas fa-handshake" style="width: 28px; height: 28px; margin-right: 8px; vertical-align: middle; filter: drop-shadow(0 0 4px #a00);"></i> Collaboration</span>
+      <span class="skill-item"><i class="fas fa-tasks" style="width: 28px; height: 28px; margin-right: 8px; vertical-align: middle; filter: drop-shadow(0 0 4px #a00);"></i> Project Management</span>
+      <span class="skill-item"><i class="fas fa-graduation-cap" style="width: 28px; height: 28px; margin-right: 8px; vertical-align: middle; filter: drop-shadow(0 0 4px #a00);"></i> Adaptability</span>
+      <span class="skill-item"><i class="fas fa-rocket" style="width: 28px; height: 28px; margin-right: 8px; vertical-align: middle; filter: drop-shadow(0 0 4px #a00);"></i> Self-Motivated</span>
+    </div>
+  </section>
+
   <section id="portfolio">
     <h2>Portfolio Projects</h2>
     <div class="projects-grid">
       
-      <!-- 3D Models Website -->
+      <div class="project-card has-image">
+        <img src="img/lorealChatbot.png" alt="L'Oréal AI Chatbot" class="project-image">
+        <div class="project-content">
+          <div>
+            <h3>L'Oréal AI Chatbot</h3>
+            <p>An intelligent chatbot for L'Oréal customers powered by OpenAI's API and deployed on Cloudflare Workers. Provides personalized product recommendations, beauty tips, and answers customer queries in real-time with natural language processing.</p>
+            <div class="project-tech">
+              <span class="tech-tag">OpenAI API</span>
+              <span class="tech-tag">Cloudflare</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">REST API</span>
+              <span class="tech-tag">NLP</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://esdras04.github.io/09-prj-loreal-routine-builder/" target="_blank" class="project-link">Visit Site</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card has-image">
+        <img src="img/charityWater.png" alt="Charity: Water Awareness Game" class="project-image">
+        <div class="project-content">
+          <div>
+            <h3>Charity: Water Awareness Game</h3>
+            <p>An interactive educational web game raising awareness about the global water crisis. Players manage water resources in different communities, learning about clean water access challenges. Features engaging gameplay mechanics and real statistics from charity: water.</p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Canvas API</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">Game Design</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://esdras04.github.io/Aqua-Craft-Final/" target="_blank" class="project-link">Visit Site</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Web Development Freelancing</h3>
+        <p>Providing freelance web development services to clients, specializing in custom websites and web applications. Focused on creating responsive, user-friendly designs with clean code and modern technologies. Experience in client communication, requirement gathering, project delivery, and maintenance.</p>
+        <div class="project-tech">
+          <span class="tech-tag">HTML/CSS</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Responsive Design</span>
+          <span class="tech-tag">Client Management</span>
+          <span class="tech-tag">Full Stack</span>
+        </div>
+        <span class="project-status">🌐 Ongoing</span>
+      </div>
+
+      <div class="project-card">
+        <h3>Personal Homelab</h3>
+        <p>Built a comprehensive home lab environment on Intel Nuc NUC7i5BNK with Proxmox as the hypervisor. Currently running multiple virtualized services including ad blocker, media library, and various self-hosted applications. Demonstrates deep understanding of system administration, virtualization, and infrastructure management.</p>
+        <div class="project-tech">
+          <span class="tech-tag">Proxmox</span>
+          <span class="tech-tag">Virtualization</span>
+          <span class="tech-tag">Linux</span>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">Networking</span>
+          <span class="tech-tag">System Administration</span>
+        </div>
+        <span class="project-status">🔧 Active Project</span>
+      </div>
+
       <div class="project-card">
         <h3>3D Models Gallery</h3>
         <p>An interactive website showcasing 3D models with Three.js integration. Features rotating displays, zoom functionality, and detailed model information with a dark, immersive interface.</p>
@@ -92,13 +165,9 @@
           <span class="tech-tag">Three.js</span>
           <span class="tech-tag">WebGL</span>
         </div>
-        <div class="project-links">
-          <a href="#" class="project-link">Live Demo</a>
-          <a href="#" class="project-link">GitHub</a>
-        </div>
+        <span class="project-status">🌐 Coming Soon</span>
       </div>
 
-      <!-- Street Food Vendor App -->
       <div class="project-card">
         <h3>Street Food Vendor</h3>
         <p>A mobile-responsive web application for street food vendors to manage their menu, take orders, and track sales. Features geolocation services and real-time order updates.</p>
@@ -109,13 +178,9 @@
           <span class="tech-tag">Express</span>
           <span class="tech-tag">GPS API</span>
         </div>
-        <div class="project-links">
-          <a href="#" class="project-link">Live Demo</a>
-          <a href="#" class="project-link">GitHub</a>
-        </div>
+        <span class="project-status">🌐 Coming Soon</span>
       </div>
 
-      <!-- Skateboard Customization Interface -->
       <div class="project-card">
         <h3>Skateboard Designer</h3>
         <p>An interactive skateboard customization interface allowing users to design their own boards with different decks, wheels, and graphics. Includes 360° preview and save functionality.</p>
@@ -126,19 +191,13 @@
           <span class="tech-tag">Local Storage</span>
           <span class="tech-tag">SVG</span>
         </div>
-        <div class="project-links">
-          <a href="#" class="project-link">Live Demo</a>
-          <a href="#" class="project-link">GitHub</a>
-        </div>
+        <span class="project-status">🌐 Coming Soon</span>
       </div>
 
     </div>
   </section>
 
- 
-
-  <!-- Footer -->
-  <footer>
+  <footer id="contact">
     <div class="footer-content">
       <div class="footer-info">
         <h3>Esdras Mora Navarro</h3>
@@ -161,19 +220,11 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2024 Esdras Mora Navarro. All rights reserved.</p>
+      <p>&copy; 2026 Esdras Mora Navarro. All rights reserved.</p>
       <p class="matrix-effect">01100101 01110011 01100100 01110010 01100001 01110011</p>
     </div>
   </footer>
-  <!-- Simple script to show/hide the menu -->
-  <script>
-    // Get the menu button and menu links
-    const menuBtn = document.getElementById('menu-btn');
-    const menuLinks = document.getElementById('menu-links');
-    // When the button is clicked, toggle the menu
-    menuBtn.onclick = function() {
-      menuLinks.classList.toggle('show');
-    };
-  </script>
-</body>
-</html>
+
+  <script src="script.js"></script>
+  </body>
+  </html>

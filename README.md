@@ -1,6 +1,41 @@
-# Project 1: Build Your Personal Website with AI!
-In this project, you will leverage AI and your knowledge of HTML and CSS to build a simple, single-page personal website that will showcase your projects.
+Esdras Mora Navarro - Personal Website
 
-You will use AI to help you brainstorm design ideas, apply web development best practices, and troubleshoot issues, bringing your vision to life on screen! 
+Welcome to my personal website repository! 👋
 
-Launch a Codespace to get started. **Remember to Commit and Push** your project changes to GitHub from Codespaces to prevent losing progress.
+I’m Esdras Mora Navarro, a junior Computer Science major at Adelphi University with a passion for web development, creative storytelling, and immersive design. I’m a first-generation Mexican/Nicaraguan American driven by curiosity, creativity, and the desire to build meaningful digital experiences.
+
+🌱 About This Project
+
+This repository contains the code for my personal website, designed to showcase:
+
+My projects and portfolio
+
+Resume and skills, including AWS and Figma
+
+My interests in horror/noir aesthetics, storytelling, and video games
+
+Opportunities for collaboration and internships
+
+The website features a dark, cinematic style inspired by noir, with interactive design elements and a clean, modern interface.
+
+⚡ Features
+
+Responsive design for desktop and mobile
+
+Hero section with animated red light bulb and subtle glow effects
+
+Portfolio and project showcase
+
+Contact section for networking and internship opportunities
+
+Noir-inspired styling with custom fonts, color palette, and animations
+
+🛠️ Technologies Used
+
+HTML5, CSS3, JavaScript
+
+Figma for UI/UX design
+
+AWS (in progress) for deployment and cloud services
+
+Optional libraries for animations or interactivity
